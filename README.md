@@ -28,6 +28,11 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ]  Explain benefit(s) using `client-side routing`?
 
 > Answer:
+Client-side routing is when the route is handled internally by the JS that is loaded on the page. It provides aore desktop-like user experience, as all pages are created rather than loading brand new pages from the server, less data is processed, thus it feels faster. Also, it provides smooth transitions and animations between views. It is more beneficial for building build rich applications for example websites that have live updates. It also encourages re-usability code. 
+
+
+
+
 
 ## Project Set Up
 
