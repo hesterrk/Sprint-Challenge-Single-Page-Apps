@@ -7,12 +7,11 @@ import CharacterCard from "./CharacterCard";
 export default function CharacterList(props) {
   // TODO: Add useState to track data from useEffect
 
-  const [character, setCharacter] = useState([])
+  const [character, setCharacter] = useState([]);
 
   useEffect(() => {
     const getCharacters = () => {
-      axios
-      .get('https://rickandmortyapi.com/api/character/')
+      axios.get('https://rickandmortyapi.com/api/character/')
       .then(response => {
         setCharacter(response.data);
 
