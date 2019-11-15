@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
+import CharacterCard from "./CharacterCard";
 
 
 
@@ -29,22 +30,17 @@ getCharacters();
 
   return (
     <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
+      {character.map(character => {
+        return(
+          <CharacterCard
+          id={character.id}
+          name={character.name}
+          status={character.status}/>
+        )
+
+      })
+      
+    }
     </section>
   );
 }
-
-
- 
-     
-      
-        
-  
-//   return (
-//     <div className="movie-list">
-//       {movies.map(movie => (
-//         <MovieDetails key={movie.id} movie={movie} />
-//       ))}
-//     </div>
-//   );
-// }
