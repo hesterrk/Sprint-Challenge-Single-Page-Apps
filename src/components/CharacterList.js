@@ -14,7 +14,7 @@ export default function CharacterList(props) {
       axios
       .get('https://rickandmortyapi.com/api/character/')
       .then(response => {
-        getCharacters(response.data);
+        setCharacter(response.data);
 
     })
 
