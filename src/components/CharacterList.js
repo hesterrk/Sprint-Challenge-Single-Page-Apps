@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import axios from 'axios';
+
+
 
 export default function CharacterList(props) {
   // TODO: Add useState to track data from useEffect
@@ -34,14 +37,14 @@ getCharacters();
 
  
      
-          
+      
         
   
-  return (
-    <div className="movie-list">
-      {movies.map(movie => (
-        <MovieDetails key={movie.id} movie={movie} />
-      ))}
-    </div>
-  );
-}
+//   return (
+//     <div className="movie-list">
+//       {movies.map(movie => (
+//         <MovieDetails key={movie.id} movie={movie} />
+//       ))}
+//     </div>
+//   );
+// }
