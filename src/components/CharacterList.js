@@ -18,6 +18,7 @@ export default function CharacterList() {
       .get('https://rickandmortyapi.com/api/character/')
       .then(response => {
         setCharacter(response.data.results)
+        setFilterCharacter(response.data.results)
         console.log(character);  
         
       })
@@ -33,7 +34,6 @@ export default function CharacterList() {
 
   useEffect(() => {
    search(matchCharacter)
-
   }, [matchCharacter])
 
 //when we type in box, it will fire down and save on state
@@ -48,18 +48,15 @@ export default function CharacterList() {
 function search(matchCharacter) {
   const result = character.filter(card => card.name.toLowerCase().includes(matchCharacter.toLowerCase())
   
-
   )
-  setCharacter(result)
+  setFilterCharacter(result)
 }
-
-
 
 
   return (
     <section className="character-list">
       <SearchForm changeHandler = {changeHandler}/>
-      <h2>{character.map(card => {
+      <h2>{filterCharacter.map(card => {
         return <CharacterCard data={card} />
       }
 
