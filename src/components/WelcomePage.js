@@ -12,7 +12,7 @@ export default function WelcomePage() {
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
           alt="rick"
         />
-        <Link to='/characters'><button>Characters</button></Link>
+        <Link to='/characters'><Button>Characters</Button></Link>
       </Header>
     </section>
   );
@@ -27,4 +27,10 @@ margin: 0 auto;
 
 
 
+`;
+
+const Button = Styled.button`
+background: coral;
+margin: 0 auto;
+text-decoration: underline;
 `;

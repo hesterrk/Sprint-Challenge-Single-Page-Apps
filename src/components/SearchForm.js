@@ -1,16 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
+import Styled from "styled-components";
 
 export default function SearchForm(props) {
  
   return (
     <section className="search-form">
 
-    <input onChange={props.changeHandler}
+    <Input onChange={props.changeHandler}
   
  
-    type="text" name="text"></input>
+    type="text" name="text"></Input>
 
 
     </section>
   );
 }
+
+const Input = Styled.input`
+
+background: coral;
+display: flex;
+justify-content: center;
+
+`;

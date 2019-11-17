@@ -1,12 +1,27 @@
 import React from "react";
+import Styled from "styled-components";
+
+const Syleddiv = Styled.div`
+
+margin: 0 auto;
+display: flex;
+justify-content: center;
+flex-direction: column;
+max-width: 500px;
+align-items: center;
+border: 1px coral dashed;
+
+
+
+`;
 
 export default function CharacterCard(props) {
   return (
-  <div>
+  <Syleddiv>
   <div>{props.data.name}</div>
-  <div><img src={props.data.image}/></div>
+  <div><img src={props.data.image} alt= 'dead' /></div>
   <div>{props.data.status}</div>
-</div>
+</Syleddiv>
   )
 }
 
