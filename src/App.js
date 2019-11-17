@@ -4,6 +4,8 @@ import WelcomePage from "./components/WelcomePage";
 import CharacterList from "./components/CharacterList";
 import { Route } from 'react-router-dom';
 import CharacterCard from "./components/CharacterCard.js";
+import LocationList from "./components/LocationsList"
+import SearchForm from "./components/SearchForm.js";
 
 
 export default function App() {
@@ -11,8 +13,8 @@ export default function App() {
     <main>
       <Header />
       <Route exact path='/' component={WelcomePage}/>
-      <Route exact path='/' component={CharacterCard}/>
      <Route exact path='/characters'component={CharacterList}/>
+     <Route path='/search' component={SearchForm}/>
     </main>
   );
 }
