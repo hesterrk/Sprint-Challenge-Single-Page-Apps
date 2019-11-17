@@ -4,7 +4,7 @@ import Styled from "styled-components";
 export default function SearchForm(props) {
  
   return (
-    <section className="search-form">
+    <Section className="search-form">
 
     <Input onChange={props.changeHandler}
   
@@ -12,7 +12,7 @@ export default function SearchForm(props) {
     type="text" name="text"></Input>
 
 
-    </section>
+    </Section>
   );
 }
 
@@ -22,4 +22,9 @@ background: coral;
 display: flex;
 justify-content: center;
 
+`;
+
+const Section = Styled.section`
+display: flex;
+justify-content: center;
 `;
