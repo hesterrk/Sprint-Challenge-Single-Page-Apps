@@ -31,6 +31,11 @@ export default function CharacterList() {
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
   }, []);
 
+  useEffect(() => {
+   search(matchCharacter)
+
+  }, [matchCharacter])
+
 //when we type in box, it will fire down and save on state
 //event is the typing, the target is search box, value is the value of searchbox (what is in the box itself)
 //need to pass this as a prop down the searchbar
@@ -40,7 +45,13 @@ export default function CharacterList() {
     setMatchCharacter(event.target.value)
   }
 
+function search(matchCharacter) {
+  const result = character.filter(card => card.name.toLowerCase().includes(matchCharacter.toLowerCase())
+  
 
+  )
+  setCharacter(result)
+}
 
 
 
