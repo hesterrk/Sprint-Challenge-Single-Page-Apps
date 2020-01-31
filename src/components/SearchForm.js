@@ -9,7 +9,7 @@ export default function SearchForm(props) {
     <Input onChange={props.changeHandler}
   
  
-    type="text" name="text"></Input>
+    type="text" name="text" placeholder= "Search..."></Input>
 
 
     </Section>

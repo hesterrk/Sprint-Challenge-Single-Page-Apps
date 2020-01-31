@@ -16,6 +16,8 @@ background: lavender;
 
 `;
 
+//Passing down props from CL: name of the prop was 'data' 
+
 export default function CharacterCard(props) {
   return (
   <Syleddiv>
