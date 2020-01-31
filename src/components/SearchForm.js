@@ -18,9 +18,10 @@ export default function SearchForm(props) {
 
 const Input = Styled.input`
 
-background: coral;
+background: white;
 display: flex;
 justify-content: center;
+border: 2px #4776E6 solid;
 
 `;
 

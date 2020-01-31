@@ -1,22 +1,9 @@
 import React from "react";
-import Styled from "styled-components";
+import Styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 
-export default function WelcomePage() {
-  return (
-    <section className="welcome-page">
-      <Header>
-        <h1>Welcome to the ultimate fan site!</h1>
-         <img
-          className="main-img"
-          src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-          alt="rick"
-        />
-        <Link to='/characters'><Button>Characters</Button></Link>
-      </Header>
-    </section>
-  );
-}
+
+
 
 const Header = Styled.header`
 display: flex;
@@ -30,7 +17,45 @@ margin: 0 auto;
 `;
 
 const Button = Styled.button`
-background: coral;
+background: #4776E6;
 margin: 0 auto;
 text-decoration: underline;
+margin-top: 20px;
+display: flex;
+margin-bottom: 10px;
+
 `;
+
+
+const animationName = keyframes`
+  0% { color: #00dbde; }
+  100% { color: #8CA6DB; }
+`
+
+const H1 = Styled.h1 `
+animation: ${animationName} 3s ease infinite alternate;
+
+
+`
+
+
+
+export default function WelcomePage() {
+  return (
+    <section className="welcome-page">
+      <Header>
+        <H1>Welcome to the Ultimate Fan Site!</H1>
+         <img
+          className="main-img"
+          src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+          alt="rick"
+        />
+        <Link to='/characters'><Button>Search For Your Favourite Character! </Button></Link>
+      </Header>
+    </section>
+  );
+}
+
+
+
+

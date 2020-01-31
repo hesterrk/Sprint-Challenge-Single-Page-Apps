@@ -9,7 +9,8 @@ justify-content: center;
 flex-direction: column;
 max-width: 500px;
 align-items: center;
-border: 1px coral dashed;
+border: 3px #8E54E9 solid;
+background: lavender;
 
 
 
