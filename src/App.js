@@ -10,7 +10,11 @@ export default function App() {
     <main>
       <Header />
       <WelcomePage />
-      <Route path="/characters" component= {CharacterList}/>
+      {/* <Route path="/characters" component= {CharacterList}/> */}
+
+       <Route path="/characters">
+        <CharacterList/>
+      </Route> 
        
     </main>
   );

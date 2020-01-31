@@ -3,16 +3,12 @@ import Styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 
 
-
-
 const Header = Styled.header`
 display: flex;
 justify-content: center;
 flex-direction: column;
 max-width: 500px;
 margin: 0 auto;
-
-
 
 `;
 
@@ -23,6 +19,8 @@ text-decoration: underline;
 margin-top: 20px;
 display: flex;
 margin-bottom: 10px;
+font-family: monospace;
+color: white;
 
 `;
 
@@ -34,6 +32,7 @@ const animationName = keyframes`
 
 const H1 = Styled.h1 `
 animation: ${animationName} 3s ease infinite alternate;
+font-family: monospace;
 
 
 `
