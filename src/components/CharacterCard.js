@@ -1,5 +1,31 @@
 import React from "react";
+import Styled from "styled-components";
 
-export default function CharacterCard() {
-  return <span>todo: character</span>;
+const Syleddiv = Styled.div`
+
+margin: 0 auto;
+display: flex;
+justify-content: center;
+flex-direction: column;
+max-width: 500px;
+align-items: center;
+border: 3px #8E54E9 solid;
+background: lavender;
+
+
+
+`;
+
+//Passing down props from CL: name of the prop was 'data' 
+
+export default function CharacterCard(props) {
+  return (
+  <Syleddiv>
+  <div>{props.data.name}</div>
+  <div><img src={props.data.image} alt= 'dead' /></div>
+  <div>{props.data.status}</div>
+</Syleddiv>
+  )
 }
+
+
